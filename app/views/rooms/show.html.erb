@@ -1,2 +1,7 @@
-<h1>Rooms#show</h1>
-<p>Find me in app/views/rooms/show.html.erb</p>
+<p><%= "ルーム名：#{@room.name}" %></p>
+
+<input type="text" data-behavior="room_speaker"> // 投稿フォーム
+
+<div id="posts">
+  <%= render "post", collection: @posts %>
+</div
